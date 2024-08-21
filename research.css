@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%;
+}
+ul,
+a,
+button,
+input,
+select,
+textarea {
+  list-style: none;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #333;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+}
+.container {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 1rem;
+  /* border-radius: 10px; */
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 a {
+  color: #333;
+}
+
+.hamburger {
+  /* display: none; */
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.hamburger.active {
+  transform: translateX(-50px);
+}
+
+.hamburger div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+nav {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.sidebar {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 90%;
+    max-width: 1024px;
+  }
+  .sidebar {
+    display: block;
+    flex-direction: column;
+    gap: 1rem;
+    flex-basis: 30%;
+  }
+  .hamburger {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
+}
