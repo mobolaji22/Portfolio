@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <header>
-        <h1><a href="research.html">Research</a></h1>
+        <h1><a href="research.html">Today's Diegest</a></h1>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -17,41 +17,126 @@
             <li><a href="projects.html">Projects</a></li>
           </ul>
         </nav>
-        <div class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="hamburger" onclick="navigate()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
       </header>
 
       <main>
+        <div class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clients.html">Clients</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
         <section class="sidebar">
+          <div class="filter">
+            <select title="filter" id="filter">
+              <option value="select option">--filter by tags--</option>
+              <option value="Web Development">Web Development</option>
+              <option value="Cyber Security">Cyber Security</option>
+              <option value="Ethical Hacking">Ethical Hacking</option>
+              <option value="Movies">Movies</option>
+            </select>
+          </div>
           <h2>Topics</h2>
           <ul>
-            <li><a href="#">Natural Language Processing</a></li>
-            <li><a href="#">Deep Learning</a></li>
-            <li><a href="#">Machine Learning</a></li>
-            <li><a href="#">Artificial Intelligence</a></li>
+            <li>
+              <a href="#"
+                ><span>Natural Language Processing</span
+                ><span> 22-08-2024</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><span>Deep Learning</span><span> 22-08-2024</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span>Machine Learning</span><span> 22-08-2024</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span>Artificial Intelligence</span><span> 22-08-2024</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><span>Mr. Robot</span><span> 22-08-2024</span></a>
+            </li>
           </ul>
         </section>
-        <section class="content">
+        <section class="content-container">
           <div class="story">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae iure
-            voluptates, nostrum animi eum possimus aliquam ut aspernatur
-            repudiandae quibusdam, nihil, at sapiente? Autem veniam, odit alias
-            pariatur obcaecati totam!
+            <div class="title">Lorem</div>
+            <div class="date-time">22-08-2024 14:46pm</div>
+            <div class="content">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+              iure voluptates, nostrum animi eum possimus aliquam ut aspernatur
+              repudiandae quibusdam, nihil, at sapiente? Autem veniam, odit
+              alias pariatur obcaecati totam! Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Reiciendis fugiat voluptatem,
+              temporibus ut voluptas commodi aspernatur alias illo, natus ad
+              tempora eaque laboriosam architecto quos, necessitatibus itaque
+              velit dolorum expedita! Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Aspernatur tempore hic quibusdam illo veritatis.
+              Incidunt quidem molestias delectus ad, consequuntur exercitationem
+              quis maiores laborum non totam est sunt dicta nisi? Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Quibusdam,
+              dignissimos, assumenda quo dolorum expedita magnam aperiam
+              adipisci et laboriosam eveniet nostrum omnis beatae rerum dicta
+              repellat doloremque. Adipisci, a praesentium! Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Ratione aperiam maxime
+              rerum nobis, eaque error quas quisquam tempora quo porro incidunt,
+              eius sint omnis. Voluptate aliquam provident perspiciatis tempora
+              accusantium. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Nostrum incidunt veniam dolores consequatur, vel est fugiat
+              dicta similique neque debitis! Officiis doloremque pariatur
+              officia soluta et quam magni animi itaque. Lorem ipsum dolor sit
+              amet consectetur, adipisicing elit. Alias magni cupiditate
+              aspernatur placeat facilis in perferendis similique laboriosam,
+              esse eum. Illo eveniet dolorum repellat rem! Ratione incidunt
+              perferendis obcaecati. Magnam?
+            </div>
           </div>
-          <div class="story">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Consequatur autem temporibus accusamus beatae, eos voluptate,
-            laboriosam et commodi corporis porro ex, totam eligendi?
-            Praesentium, repellendus. Assumenda qui aut officia maxime?
-          </div>
-          <div class="story">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-            doloribus eligendi ut? Architecto, deleniti distinctio! Deleniti,
-            aut distinctio. Pariatur possimus voluptate placeat nobis? Beatae,
-            soluta quisquam velit quod facere vel?
+          <div class="comments">
+            <form action="">
+              <textarea
+                title="comment-field"
+                id="comment-field"
+                placeholder="please leave a comment..."
+              ></textarea>
+              <input type="submit" value="post" id="submit" />
+            </form>
+            <ul>
+              <li>
+                <div class="comment">
+                  <div class="comment-author">John Doe</div>
+                  <div class="comment-date-time">22-08-2024 14:47pm</div>
+                  <div class="comment-content">Great work! I'm impressed.</div>
+                </div>
+              </li>
+              <li>
+                <div class="comment">
+                  <div class="comment-author">Jane Smith</div>
+                  <div class="comment-date-time">22-08-2024 14:48pm</div>
+                  <div class="comment-content">
+                    Thank you for the recommendation!
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="comment">
+                  <div class="comment-author">Bob Johnson</div>
+                  <div class="comment-date-time">22-08-2024 14:48pm</div>
+                  <div class="comment-content">
+                    Thank you for the recommendation!
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
       </main>

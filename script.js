@@ -93,3 +93,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+/* -------------------------------------------------------------------------- */
+/*                                  Research                                  */
+/* -------------------------------------------------------------------------- */
+
+// console.log("hamburger:", hamburger); // Check if the element is found
+// console.log("navbar:", navbar);
+
+function navigate() {
+  const hamburger = document.querySelector(".hamburger");
+  const navbar = document.querySelector(".navbar");
+  console.log("click event triggered");
+  hamburger.classList.toggle("change");
+  navbar.classList.toggle("change");
+}
