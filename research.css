@@ -31,13 +31,14 @@ body {
 .container {
   width: 100%;
   background-color: #fff;
-  padding: 0 1rem;
+  border: 2px solid red;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem 2rem;
 }
 
 header h1 a {
@@ -88,7 +89,7 @@ nav {
 }
 
 .navbar {
-  transform: translateX(210px);
+  transform: translateX(220px);
   width: 200px;
   height: 95dvh;
   position: absolute;
@@ -134,6 +135,10 @@ main {
   gap: 1rem;
   padding: 20px;
   position: relative;
+}
+
+.content-container {
+  margin: 0 1rem;
 }
 
 .title {
@@ -189,20 +194,42 @@ main {
     width: 90%;
     min-width: 768px;
   }
+
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+  }
+
   main {
     flex: 1;
   }
 
   .sidebar {
     display: block;
-    flex-direction: column;
-    gap: 1rem;
-    flex-basis: 50%;
+    margin: 5rem 0.5rem;
   }
-  .hamburger {
-    display: none;
+
+  .filter {
+    margin-bottom: 1rem;
   }
-  nav {
-    display: block;
+
+  .filter select {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .topics li {
+    margin: 1rem 0;
+  }
+
+  .content-container {
+    padding: 0 1rem;
   }
 }

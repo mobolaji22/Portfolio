@@ -336,6 +336,17 @@ body {
 
 .intro {
   font-size: 1.7rem;
+  line-height: 2.7rem;
+}
+
+.intro span {
+  /* border: 1px solid red; */
+  font-weight: bold;
+  font-style: italic;
+  /* background-color: gray; */
+  padding: 0.1em;
+  border-radius: 5px;
+  /* color: white; */
 }
 
 /* Dark mode */
