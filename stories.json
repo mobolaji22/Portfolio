@@ -1,0 +1,105 @@
+[
+  {
+    "title": "Natural Language Processing",
+    "date": "22/08/2024",
+    "time": "14:46pm",
+    "tag": "Web Development",
+    "content": "Exploring the latest advancements in NLP and its applications in web development.",
+    "comments": [
+      {
+        "author": "John Doe",
+        "dateTime": "22/08/2024 14:47pm",
+        "content": "Great work! I'm impressed."
+      },
+      {
+        "author": "Jane Smith",
+        "dateTime": "22/08/2024 14:48pm",
+        "content": "Thank you for the recommendation!"
+      }
+    ]
+  },
+  {
+    "title": "Understanding React.js",
+    "date": "21/08/2024",
+    "time": "10:30am",
+    "tag": "Web Development",
+    "content": "A deep dive into the React.js library and its benefits for building dynamic user interfaces.",
+    "comments": [
+      {
+        "author": "Alice",
+        "dateTime": "21/08/2024 11:00am",
+        "content": "React is so powerful!"
+      }
+    ]
+  },
+  {
+    "title": "Deep Learning for Security",
+    "date": "20/08/2024",
+    "time": "12:00pm",
+    "tag": "Cyber Security",
+    "content": "How deep learning techniques are revolutionizing cybersecurity.",
+    "comments": [
+      {
+        "author": "Bob Johnson",
+        "dateTime": "20/08/2024 12:30pm",
+        "content": "This is a game-changer for the industry."
+      }
+    ]
+  },
+  {
+    "title": "AI in Ethical Hacking",
+    "date": "19/08/2024",
+    "time": "09:00am",
+    "tag": "Ethical Hacking",
+    "content": "The role of AI in identifying vulnerabilities and enhancing ethical hacking strategies.",
+    "comments": []
+  },
+  {
+    "title": "AI in Movies",
+    "date": "18/08/2024",
+    "time": "08:30am",
+    "tag": "Movies",
+    "content": "Exploring how artificial intelligence is used in the movie industry to create special effects and animations.",
+    "comments": []
+  },
+  {
+    "title": "Machine Learning in Web Apps",
+    "date": "17/08/2024",
+    "time": "11:15am",
+    "tag": "Web Development",
+    "content": "Integrating machine learning models into web applications for enhanced user experience.",
+    "comments": []
+  },
+  {
+    "title": "Cybersecurity Threats in 2024",
+    "date": "16/08/2024",
+    "time": "02:45pm",
+    "tag": "Cyber Security",
+    "content": "Analyzing the latest cybersecurity threats and how organizations can protect themselves.",
+    "comments": []
+  },
+  {
+    "title": "Advanced Ethical Hacking Techniques",
+    "date": "15/08/2024",
+    "time": "03:00pm",
+    "tag": "Ethical Hacking",
+    "content": "New techniques in ethical hacking and how they are applied in real-world scenarios.",
+    "comments": []
+  },
+  {
+    "title": "Virtual Reality in Movies",
+    "date": "14/08/2024",
+    "time": "04:00pm",
+    "tag": "Movies",
+    "content": "The impact of virtual reality on movie production and viewer experience.",
+    "comments": []
+  },
+  {
+    "title": "The Future of Web Development",
+    "date": "13/08/2024",
+    "time": "05:30pm",
+    "tag": "Web Development",
+    "content": "Predicting the future trends in web development and how developers can prepare.",
+    "comments": []
+  }
+]

@@ -30,11 +30,12 @@ body {
 #container {
   width: 90%;
   height: 90dvh;
-  background-color: #f6f6f6;
+  background-color: #f0f0ff;
   border-radius: 10px;
   display: flex;
   /* justify-content: center; */
   align-items: center;
+  border: 2px solid red;
 }
 
 .hamburger {
@@ -54,7 +55,7 @@ body {
 }
 
 #pages {
-  border: 2px solid purple;
+  /* border: 2px solid purple; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +81,7 @@ body {
   position: absolute;
   width: 200px;
   height: 200px;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
@@ -103,7 +104,7 @@ body {
   display: flex;
   width: 100%;
   height: 90%;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   gap: 3rem;
 }
 
