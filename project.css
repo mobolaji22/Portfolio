@@ -39,6 +39,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin: 1rem 2rem;
+  /* background: linear-gradient(to right, #fff 0%, #000); */
 }
 
 header h1 a {
@@ -48,15 +49,15 @@ header h1 a {
 .hamburger {
   display: block;
   /* position: absolute;
-  top: 10px;
-  right: 10px; */
+    top: 10px;
+    right: 10px; */
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   /* z-index: 100; */
 }
 
 .hamburger.change {
-  transform: translateX(-160px);
+  transform: translateX(-190px);
 }
 
 .bar1,
@@ -91,7 +92,7 @@ nav {
 .navbar {
   transform: translateX(220px);
   width: 200px;
-  height: 95dvh;
+  height: 100dvh;
   position: absolute;
   top: 0;
   right: 0;
@@ -125,98 +126,64 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.sidebar {
-  display: none;
-}
-
-main {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-.content-container {
-  /* margin: 0 auto; */
-  min-width: 100%;
-}
-
-.title {
-  font-size: 3rem;
+.hero {
+  /* background: linear-gradient(to right, #fff 0%, #000); */
+  background-image: url("img/6953608.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+  padding: 2em;
   text-align: center;
-  margin-bottom: 1rem;
-}
-
-.date-time {
-  font-weight: bold;
-}
-
-.content {
-  margin-bottom: 1rem;
-  line-height: 3rem;
-}
-
-#story-navigation {
-  margin: 1rem 0;
-}
-
-#story-navigation button {
-  padding: 0.25rem 0.5rem;
-  border-radius: 5px;
-  border: 1px solid red;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* #story-navigation button.active {
-  background-color: #f0f0f0;
-} */
-
-/* #story-navigation button:focus {
-  outline: none;
-} */
-
-#story-navigation button[disabled] {
-  cursor: not-allowed;
-}
-/* #story-navigation button:hover {
-  background-color: #f0f0f0;
-} */
-
-.comments {
-  /* border: 1px solid red; */
-}
-
-#comment-field {
-  width: 100%;
-  height: 100px;
-  padding: 1rem;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-  resize: vertical;
-  overflow: auto;
-  /* outline: none; */
-  background-color: transparent;
-}
-
-#submit {
-  background-color: blue;
-  padding: 1rem 3rem;
   color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.hero h1 {
+  font-size: 4rem;
+}
+
+.hero p {
+  font-size: 2rem;
+}
+
+.top-project {
+  width: 100%;
+}
+
+.info {
+  padding: 1em;
+  line-height: 1.5em;
+  /* border: 2px solid red; */
+}
+
+.info h2 {
+  font-size: 3rem;
+}
+
+.info p {
+  font-size: 1.6rem;
+}
+
+.links a {
+  display: block;
+  width: max-content;
+}
+
+.top .img {
+  padding: 0.5em;
+  border: 2px solid red;
   border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border: none;
 }
 
-#submit:hover {
-  background-color: darkblue;
-}
-
-.comment {
-  margin-top: 1rem;
+.img img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* ------------------------------ media queries ----------------------------- */
@@ -239,49 +206,22 @@ main {
     display: none;
   }
 
-  main {
-    gap: 3rem;
+  .top-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2em 0;
   }
 
-  .sidebar {
-    display: block;
-    margin: 4.5rem 0.5rem;
-    max-width: 17%;
+  .project2 {
+    flex-direction: row-reverse;
   }
 
-  .filter {
-    margin-bottom: 1rem;
+  .info {
+    width: 50%;
   }
 
-  .filter select {
-    padding: 0.5rem 0;
-    text-align: center;
-    background-color: #f0f0ff;
-    border: 1px solid red;
-    border-radius: 5px;
-    outline: red;
-    /* width: 100%; */
-  }
-
-  .topics li {
-    margin: 1rem 0;
-  }
-
-  .content-container {
-    padding: 0 1rem;
-    min-width: 78%;
-    /* margin-left: auto; */
-  }
-}
-
-@media (min-width: 1024px) {
-  .content-container {
-    min-width: 79%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .content-container {
-    min-width: 85%;
+  .top .img {
+    width: 50%;
   }
 }
